@@ -24,12 +24,12 @@ passport.use(new LocalStrategy(
 ));
 
 //add the user in session
-passport.serializeUser(function(user, done) {
+passport.serializeUser((user, done) => {
   console.log(user);
   done(null, user);
 });
 
-passport.deserializeUser(function(user, done) {
+passport.deserializeUser((user, done) => {
   console.log(user);
   done(null, user);
 });
