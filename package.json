@@ -1,0 +1,31 @@
+{
+  "name": "https-and-passport",
+  "version": "1.0.0",
+  "description": "Create a local (self-signed certificate) https server and authenticate user with passport.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick-ausderau/https-and-passport.git"
+  },
+  "keywords": [
+    "https",
+    "passport"
+  ],
+  "author": "Patrick Ausderau",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/patrick-ausderau/https-and-passport/issues"
+  },
+  "homepage": "https://github.com/patrick-ausderau/https-and-passport#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
