@@ -45,7 +45,8 @@ app.use(passport.session());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
-//tls/ssl certificate/key for https
+//tls/ssl certificate/key for https 
+//put in whatever dir you want and adapt the path
 const sslkey = fs.readFileSync('../ssl-key.pem');
 const sslcert = fs.readFileSync('../ssl-cert.pem')
 
