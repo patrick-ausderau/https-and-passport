@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 require('dotenv').config();
 const https = require('https');
@@ -35,7 +35,7 @@ passport.deserializeUser((user, done) => {
 });
 
 app.use(session({
-  secret: 'some s3cr3t value',
+  secret: process.env.secret,
   resave: true,
   saveUninitialized: true
 }));
@@ -72,4 +72,7 @@ app.post('/login',
   passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login.html' })
 );
 
-
+app.get('/test', (req, res) => {
+  if(req.user !== undefined)
+    return res.send(`TEST ${req.user.username}!`);
+  res.send('TEST!');});
