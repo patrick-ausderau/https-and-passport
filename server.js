@@ -75,4 +75,5 @@ app.post('/login',
 app.get('/test', (req, res) => {
   if(req.user !== undefined)
     return res.send(`TEST ${req.user.username}!`);
-  res.send('TEST!');});
+  res.send('TEST!');
+});

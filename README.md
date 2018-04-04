@@ -6,4 +6,4 @@
 * passport.js authentication
 
 ---
-Generate the [localhost key/certificate](https://github.com/ilkkamtk/SSSF-course/blob/master/Slides/Week3/W3-4-https-passport.md)
+Generate the [localhost key/certificate](https://ilkkamtk.github.io/SSSF-course/Slides/Week3/W3-4-https-passport.html)
