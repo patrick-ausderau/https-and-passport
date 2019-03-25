@@ -47,6 +47,7 @@ app.use(express.static('public'));
 
 //tls/ssl certificate/key for https 
 //put in whatever dir you want and adapt the path
+//if in current dir (or sub-folder) add to .gitignore!
 const sslkey = fs.readFileSync('../ssl-key.pem');
 const sslcert = fs.readFileSync('../ssl-cert.pem')
 
